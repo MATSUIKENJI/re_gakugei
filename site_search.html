@@ -1,0 +1,85 @@
+<?php
+	include( 'module/inc/config.php');
+	$pageinfo = array(
+		'id' => 'site_search',
+		'classType' => 'index',
+		'viewport' => $siteinfo['viewport'],
+		'description' => $siteinfo['description'],
+		'keywords' => $siteinfo['keywords'],
+		'title' => $siteinfo['name'],
+		'gmap' => 'false',
+		'ga' => 'true'
+	);
+
+	$addElements = array(
+		'css' => array( 'module/css/common_sec.css', 'module/css/pageParts.css' ),
+		'js' => array('module/js/index.funcs.js')
+	);
+
+
+	include( relPath() . 'module/inc/sitehead.php');
+?>
+
+
+<body id="<?php echo $pageinfo['id']; ?>" class="<?php echo $pageinfo['classType']; ?>">
+<?php include( relPath() . 'module/inc/tagmanager.php'); ?>
+<div class="wrapper">
+
+<?php include( relPath() . 'module/inc/header.php'); ?><!-- header -->
+
+
+
+
+<!--
+****** mainv ****** -->
+<div id="sec_title">
+	<h1 id="pagetitle"><img src="module/img/site_search/pagetitle.png" data-src="module/img/site_search/pagetitle.png" data-bp="landscape" class="imgChange" alt="入試情報 INFORMATION OF THE ENTRANCE EXAMINATION"></h1>
+</div>
+
+<!--
+****** content ****** -->
+<div id="content" class="">
+
+
+<article id="cnt_main">
+
+
+<div id="All">
+
+
+<script>
+  (function() {
+    var cx = '007319270973452705592:jk5mum3wmoe';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+
+
+</div>
+
+</article>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<?php include( relPath() . 'module/inc/footer_lower.php'); ?><!-- footer -->
+<!-- /.wrapper --></div>
+</body>
+</html>

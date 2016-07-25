@@ -1,0 +1,196 @@
+<?php
+	include( 'module/inc/config.php');
+	$pageinfo = array(
+		'id' => 'index',
+		'classType' => 'index',
+		'viewport' => $siteinfo['viewport'],
+		'description' => $siteinfo['description'],
+		'keywords' => $siteinfo['keywords'],
+		'title' => $siteinfo['name'],
+		'gmap' => 'false',
+		'ga' => 'true'
+	);
+
+	$addElements = array(
+		'css' => array('module/css/pageParts.css'),
+		'js' => array('module/js/index.funcs.js')
+	);
+
+
+	echo relPath();
+
+	include( relPath() . 'module/inc/sitehead.php');
+?>
+
+
+
+
+
+
+<body id="<?php echo $pageinfo['id']; ?>" class="<?php echo $pageinfo['classType']; ?>">
+<?php include( relPath() . 'module/inc/tagmanager.php'); ?>
+<div class="wrapper">
+
+<?php include( relPath() . 'module/inc/header.php'); ?><!-- header -->
+
+
+
+<!--
+****** content ****** -->
+<div id="content" class="">
+
+
+		<article id="cnt_main">
+
+
+			<div id="mainv_cnt">
+
+
+				<!-- sec_1 -->
+				<section class="cf" id="sec01">
+					<div class="main_nav">
+						<ul class="cf">
+							<li class="li1 img-block">
+								<img src="module/img/common/none.png" data-src="module/img/index/img01.jpg" data-bp="landscape" class="imgChange" alt="">
+								<p class="txt01"><img src="module/img/index/txt01.png" alt="管理栄養学科"></p>
+							</li>
+							<li class="li2 img-block">
+								<img src="module/img/common/none.png" data-src="module/img/index/img02.jpg" data-bp="landscape" class="imgChange" alt="">
+								<p class="txt01"><img src="module/img/index/txt02.png" alt="子どもケア学科 子どもケア専攻 養護教諭コース 子ども心理コース"></p>
+							</li>
+							<li class="li3 img-block">
+								<img src="module/img/common/none.png" data-src="module/img/index/img03.jpg" data-bp="landscape" class="imgChange" alt="">
+								<p class="txt01"><img src="module/img/index/txt03.png" alt="子どもケア学科 幼児保育先攻"></p>
+							</li>
+							<li class="li4 img-block">
+								<img src="module/img/common/none.png" data-src="module/img/index/img04.jpg" data-bp="landscape" class="imgChange" alt="">
+								<p class="txt01"><img src="module/img/index/txt04.png" alt="映像メディア学科"></p>
+							</li>
+							<li class="li5 img-block">
+								<img src="module/img/common/none.png" data-src="module/img/index/img05.jpg" data-bp="landscape" class="imgChange" alt="">
+								<p class="txt01"><img src="module/img/index/txt05.png" alt="デザイン学科"></p>
+							</li>
+							<li class="li6 img-block">
+								<img src="module/img/common/none.png" data-src="module/img/index/img06.jpg" data-bp="landscape" class="imgChange" alt="">
+								<p class="txt01"><img src="module/img/index/txt06.png" alt="ファッション造形学科"></p>
+							</li>
+						</ul>
+					</div>
+
+				</section>
+
+				<!-- <div class="btm_nav_box column3">
+					<ul class="btm_nav cf">
+						<li class="img-block">
+							<img src="module/img/index/img07.jpg" class="img" alt="">
+							<p class="txt03">
+								<span class="arrow"></span>
+								<img src="module/img/index/txt07_2.png" alt="">
+							</p>
+							<p class="txt02 txt02_1"><img src="module/img/index/txt07.png" alt=""></p>
+						</li>
+						<li class="img-block">
+							<img src="module/img/index/img08.jpg" class="img" alt="">
+							<p class="txt03">
+								<span class="arrow arrow2"></span>
+								<img src="module/img/index/txt08_2.png" alt="">
+							</p>
+							<p class="txt02"><img src="module/img/index/txt08.png" alt=""></p>
+						</li>
+						<li class="img-block">
+							<img src="module/img/index/img09.jpg" class="img" alt="">
+							<p class="txt03">
+								<span class="arrow arrow3"></span>
+								<img src="module/img/index/txt09_2.png" alt="">
+							</p>
+							<p class="txt02"><img src="module/img/index/txt09.png" alt=""></p>
+						</li>
+					</ul>
+				</div>
+ -->
+<!-- 				<div class="btm_nav_box column1">
+					<ul class="btm_nav cf">
+						<li>
+							<a href="event01/index.html">
+							<img src="module/img/index/bnr01_iocn01.png" alt=""  class="icon">
+							<img src="module/img/common/none.png" data-src="module/img/index/bnr01.png" width="100%" class="img imgChange" data-bp="middle" alt="">
+							<div>
+								<p class="bnr01_txt01"><img src="module/img/index/bnr01_txt01.png" data-src="module/img/index/bnr01_txt01.png" data-bp="middle" class="imgChange" alt=""></p>
+								<p class="bnr01_txt02"><img src="module/img/index/bnr01_txt02.png" data-src="module/img/index/bnr01_txt02.png" data-bp="middle" class="imgChange" alt=""></p>
+							</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+ -->
+
+			<!-- / #mainv_cnt --></div>
+
+
+
+			<section id="news">
+				<div class="incnt">
+					<div class="inbox">
+						<div class="cnt_right">
+							<p class="banner"><a href="http://kirabo-3.jp/" target="_blank"><img src="module/img/common/none.png" data-src="module/img/index/banner01.png" alt="kirabo-3" data-bp="middle" class="btnfade imgChange"></a></p>
+						</div>
+						<div class="cnt_left">
+							<p class="tit_news"><img src="module/img/common/tit_news.png" alt="NEWS"></p>
+							<ul class="news_slide clearfix">
+								<li>
+									<dl class="new_cnt">
+										<dt>2016.06.08</dt>
+										<dd><a href="/examination/ao.html">メディア造形学部対象 AO入試 Ⅰ 【体験型】の詳細情報をアップしました。</a></dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="new_cnt">
+										<dt>2016.06.03</dt>
+										<dd><a href="/examination/">「入試情報」を更新しました。</a></dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="new_cnt">
+										<dt>2016.06.03</dt>
+										<dd>受験生サイトをリニューアルしました。</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="new_cnt">
+										<dt>2016.04.04</dt>
+										<dd><a href="/event01/">2016年度「オープンキャンパス情報」をアップしました。</a></dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="new_cnt">
+										<dt>2016.04.04</dt>
+										<dd><a href="/event02/">2016年度「進学相談会」の日程をアップしました。</a></dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+		</article>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<?php include( relPath() . 'module/inc/footer.php'); ?><!-- footer -->
+<!-- /.wrapper --></div>
+</body>
+</html>
